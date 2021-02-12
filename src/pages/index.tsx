@@ -9,6 +9,11 @@ import { Main } from '../templates/Main';
 
 Amplify.configure(awsExports);
 
+if (process.env.ENVIRONMENT === 'dev') {
+  awsExports.oauth.redirectSignIn = process.env.REDIRECT_SIGN_IN;
+  awsExports.oauth.redirectSignOut = process.env.REDIRECT_SIGN_OUT;
+}
+
 function Home() {
   const [user, setUser] = useState(null);
 
