@@ -7,7 +7,7 @@ exports.handler = async (event, context) => {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': '*',
     },
-    body: JSON.stringify(['This is secret content']),
+    body: JSON.stringify(['This is secret content', event, context]),
   };
   return response;
 };

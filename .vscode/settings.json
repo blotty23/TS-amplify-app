@@ -16,5 +16,6 @@
     "source.addMissingImports",
     "source.fixAll.format",
     "source.fixAll.eslint"
-  ]
+  ],
+  "cSpell.words": ["lambdaexecutionpolicy", "nextjsamplify", "secretcontent"]
 }
