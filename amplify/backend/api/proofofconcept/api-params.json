@@ -1,0 +1,33 @@
+{
+  "paths": [
+    {
+      "name": "/secretcontent",
+      "lambdaFunction": "secretcontent",
+      "privacy": {
+        "private": true,
+        "auth": ["/GET"]
+      }
+    }
+  ],
+  "resourceName": "proofofconcept",
+  "apiName": "proofofconcept",
+  "functionArns": [
+    {
+      "lambdaFunction": "secretcontent"
+    }
+  ],
+  "privacy": {
+    "auth": 2,
+    "unauth": 0,
+    "authRoleName": "amplify-nextjsamplify-dev-160224-authRole",
+    "unAuthRoleName": "amplify-nextjsamplify-dev-160224-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "secretcontent",
+      "attributes": ["Name", "Arn"]
+    }
+  ],
+  "uuid": "75149af7"
+}

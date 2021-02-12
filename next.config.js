@@ -11,4 +11,5 @@ module.exports = withBundleAnalyzer({
   env: {
     baseUrl: baseUrl,
   },
+  trailingSlash: true,
 });

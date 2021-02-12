@@ -1,0 +1,30 @@
+{
+  "auth": {
+    "nextjsamplify322d205e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "api": {
+    "proofofconcept": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "secretcontent",
+          "attributes": ["Name", "Arn"]
+        }
+      ]
+    }
+  },
+  "function": {
+    "secretcontent": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  }
+}
