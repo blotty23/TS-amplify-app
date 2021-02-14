@@ -35,9 +35,9 @@
   "hostedUIDomainName": "nextjsamplify322d205e-322d205e",
   "authProvidersUserPool": [],
   "hostedUIProviderMeta": "[]",
-  "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:8080/dashboard/\"],\"LogoutURLs\":[\"http://localhost:8080/\"]}",
   "userPoolGroupList": [],
   "serviceName": "Cognito",
   "usernameCaseSensitive": false,
-  "dependsOn": []
+  "dependsOn": [],
+  "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:8080/dashboard/\",\"http://localhost:3000/dashboard/\"],\"LogoutURLs\":[\"http://localhost:8080/\",\"http://localhost:3000/\"]}"
 }
