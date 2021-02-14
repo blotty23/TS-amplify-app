@@ -12,9 +12,9 @@ frontend:
         - npm ci
     build:
       commands:
-        - npm run build
+        - npm run prod-build
   artifacts:
-    baseDirectory: .next
+    baseDirectory: dist/
     files:
       - '**/*'
   cache:
